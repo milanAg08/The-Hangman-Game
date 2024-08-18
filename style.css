@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #CAF4FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading img{
+    height: 90vh;
+}
+
+.heading button{
+    font-size: 2rem;
+    height: 3rem;
+    width: 16rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #0d6efd;
+    color: white;
+}
+
+.heading button:hover{
+    background-color: white;
+    border: 0.2rem solid #0d6efd;
+    color: #0d6efd;
+}
+
+
+.container{
+    height: 70vh;
+    width: 75vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    border-radius: 2rem;
+}
+
+.hangman img{
+    height: 60vh;
+}
+
+.game-box{
+    height: 70vh;
+    width: 50vw;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.next-word{
+    text-align: right;
+    display: inline;
+}
+
+.next-word button{
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    color: #3576f0;
+}
+
+.next-word button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.letters {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.letters p{
+    width: 1.8rem;
+    border-bottom: 0.2rem solid black;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hint{
+    font-size: 1.3rem;
+}
+
+.hint h3{
+    font-weight: bold;
+}
+
+.guesses{
+    font-size: 1.3rem;
+    display: flex;
+}
+
+.guesses h3{
+    font-weight: bold;
+    padding-right: 5rem;
+}
+
+.guesses p{
+    color: red;
+}
+
+.keyboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.keyboard div{
+    font-size: 1.8rem;
+    display: flex;
+}
+
+.keyboard button{
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    background-color: black;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+}
+
+.keyboard button:hover{
+    background-color: #3576f0;
+    
+}
+
+.keyboard :disabled{
+    background-color: #3576f0;
+}
+
+.pop-up-parent{
+   position: fixed;   
+   background-color: rgba(0,0,0,0.6); 
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   display: none;
+}
+
+.pop-up-child{
+   background-color: white;
+   padding: 50px;
+   border-radius: 5%;
+   width: 25%;
+   text-align: center;
+   
+}
+
+.pop-up-h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.game-modal-content p{
+    font-size: 20px;
+}
+
+.game-modal-content p b{
+    color: rgb(0, 204, 255);
+}
+
+.pop-up-btn{
+    margin-top: 15px;
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 8%;
+    background-color: rgb(0, 204, 255);
+    box-shadow: 0 9px #999;
+    border-color: rgb(0, 204, 255);
+}
+
+.game-modal-content button:active {
+    background-color: rgb(0, 190, 255);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.game-modal img{
+    width: 200px;
+    height: 172px;
+}
+
+.how-to-play-content p{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px), (min-height: 780px){
+    .heading img{
+        width: 90%;
+        height: 85vh;
+    }
+
+    .pop-up-child{
+        padding: 25px;
+        width: 25%;
+     }
+
+    .how-to-play-content p{
+        font-size: 10px;
+    }
+
+    .pop-up-h4{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .pop-up-btn{
+        margin-top: 5pxpx;
+        font-size: 15px;
+        padding: 4px;
+        border-radius: 8%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hangman img{
+        height: 35vh;
+    }
+
+    .game-box{
+        padding-left: 0;
+    }
+
+    .next-word button{
+        font-size: 10px;
+    }
+
+    .letters{
+        gap: 0.5rem;
+    }
+
+    .letters p{
+        width: 0.9rem;
+        font-size: 1rem;
+    }
+
+    .hint{
+        font-size: 0.8rem;
+    }
+
+    .guesses{
+        font-size: 0.8rem;
+    }
+    
+    .guesses h3{
+        padding-right: 2.5rem;
+    }
+
+    .keyboard div{
+        font-size: 0.9rem;
+    }
+    
+    .keyboard button{
+        font-size: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

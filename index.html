@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman-Game</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-modal pop-up-parent">
+        <div class="game-modal-content pop-up-child">
+            <img src="https://media.tenor.com/925LDfyVUGEAAAAj/cute-sad.gif" alt="None">
+            <h4 class="pop-up-h4">Game Over!</h4>
+            <p>Correct word was: <b>Bantman</b></p>
+            <button class="pop-up-btn">Play Again</button>
+        </div>
+    </div>
+    <div class="how-to-play pop-up-parent">
+        <div class="how-to-play-content pop-up-child">
+            <h4 class="pop-up-h4">How to play?</h4>
+            <p>1. Pick a Letter: Click on a letter from the on-screen keyboard to guess the hidden word.</p>
+            <p>2. Reveal the Word: If the letter is correct, it appears in the word. If not, a part of the hangman is drawn!</p>
+            <p>3. Limited Guesses: You only have 7 chances to guess wrong. Use them wisely!</p>
+            <p>4. Win or Lose: Guess the word correctly before the hangman is fully drawn to win. Otherwise, it's game over!</p>
+            <p>5. Play Again: Finished a round? Hit "Next Word" or "Play Again" to keep the fun going!</p>
+            <button class="pop-up-btn">Got it!</button>
+        </div>
+    </div>
+    <div class="heading">
+        <img src="heading.jpg">
+        <button>Play Game</button>
+    </div>
+    <div class="container">
+        <div class="hangman">
+            <img src="image-removebg-preview (0).png"/>    
+        </div>
+        <div class="game-box">
+            <div class="next-word"><button>Next Word>></button></div>
+            <div class="letters">
+            </div>
+            <div class="hint">
+                <h3>Hint:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsa aliquid maiores dolorum voluptas, omnis recusandae inci</p>
+            </div>
+            <div class="guesses">
+                <h3>Wrong guesses:</h3>
+                <p>0/7</p>
+            </div>
+            <div class="keyboard">
+                <div>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                </div>
+                <div>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                </div>
+                <div>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                    <button>a</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
